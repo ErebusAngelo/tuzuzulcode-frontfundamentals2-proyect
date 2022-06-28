@@ -1,0 +1,332 @@
+
+* {
+    padding: 0;
+    margin: 0;
+  
+    box-sizing: border-box;
+  }
+
+
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    
+    display: grid;
+    grid-template-areas:
+    "header header  header  header  header   header"
+    "aside nav     nav     nav     nav     nav  "
+    "aside section section section section section"
+    "aside section section section section section"
+    "aside section section section section section"
+    "aside section section section section section";
+     align-content: flex-start;
+  }
+
+  
+  
+  
+  
+  /*Comienzo header*/
+  
+  header{
+    
+    position:fixed;
+    top:0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    padding-right: 50px;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between
+    }
+    
+    
+    .logo{
+        display: flex;
+        width: 350px;
+        justify-content: center;
+        
+        
+    }
+    
+    .logoYt{
+        padding-top: 1px;
+        padding-left: 10px;
+        width: 150px;
+        height: 45px;
+    }
+    
+    .buscar{
+        width: 500px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .busqueda{
+        border-right: 0;
+        border-radius: 1px;
+        width: 300px;
+        height: 76%;
+    }
+    .lupa{
+        width: 50px;
+        height: 31px;
+    }
+    
+    .opciones{
+        
+        width: 160px;
+        display: flex;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .btnopcion{
+        width: 36px;
+        height: 36px;
+    }
+    .btnopcion:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    
+    /*Fin header*/
+    
+    /*comienzo nav*/
+    nav {
+        background-image: url(./fondosidebarynav/petalos.gif);
+        position: fixed;
+        top: 50px;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        grid-area: nav;
+        border-top: 0.5px solid rgb(185, 183, 183);
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        gap:20px    
+        }
+
+    h2{
+        width: 140px;
+    background-color:rgb(241, 234, 234);
+    border-radius: 20px;
+    border:solid 1px rgb(176, 170, 170);
+    font-weight: 100;
+    text-align: center;
+  
+    
+    transition: 1s;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    }
+    h2:first-child{
+        color: white;
+        background-color: black;
+     }
+    h2:hover{
+        cursor: pointer;
+      background-color: rgb(154, 150, 150);;
+    }
+/*Fin nav*/
+
+/*Comienzo aside*/
+aside{
+    /* position: fixed;
+    top: 50px; */
+    background-image: url(./fondosidebarynav/petalos.gif);
+    padding-top: 100px;
+    grid-area: aside;
+    width: 340px;
+    height: 1000px;
+    background-color: white;
+    
+}
+.h3aside{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 25px;
+    transition: 1s;
+
+}
+.h3aside:hover{
+    background-color: rgb(237, 230, 230);
+    cursor: pointer;
+}
+.h3aside:first-child{
+    color: black;
+    background-color:  rgb(237, 230, 230);
+}
+.principal{
+   
+   height: 25%;  
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+.miYoutube{
+   
+   height: 20%;  
+  
+}
+.suscripciones{
+   display: flex;
+   padding-top: 20px;
+   padding-left: 20px;
+   align-items: flex-start;
+   justify-content: flex-start;
+   height: 20%;  
+}   
+.h3sus{
+    font-size: 20px;
+ color:rgb(94, 90, 90)   
+}
+
+.masOpciones{
+    
+   height: 20%;  
+   
+}
+
+.configuracion{
+    height: 20%;  
+    
+}
+
+footer{
+    
+   height: 20%;  
+   border: 1px solid black
+}
+/*Fin aside*/
+
+/*Comienzo section*/
+section{
+  
+   
+    width: 100%;
+    height: auto;
+    background-color: rgb(246, 241, 241);
+    padding: 10px;
+    padding-left: 30px;
+    grid-area:section;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns:repeat(4, 350px);
+    grid-template-rows:repeat(20,320px);
+    gap:40px;
+   
+
+    
+    }
+    .canal{
+        text-align: justify;
+        padding-left: 21%;
+        color: rgb(164, 158, 158);
+    }
+
+    
+    h5{
+        text-align: justify;
+        padding-left: 21%;
+        color: rgb(164, 158, 158);
+    }
+    .contenedor{
+        display: flex;
+        gap: 30px;
+    }
+    
+    .logosCanales{
+        width: 45px;
+        height: 45px;
+        border-radius: 50px;
+        
+    }
+    
+    iframe{
+           width: 350px;
+           height: 230px;
+   }
+   
+
+ .video-1{
+
+padding-top: 125px;      
+grid-column-start: 1;
+grid-column-end: 2;
+transition: 1s;
+
+    }
+.video-1:hover{
+    
+    transform: scale(1.1);
+   }
+
+    
+.video-2{
+       
+        padding-top: 125px;    
+        grid-column-start: 2;
+        grid-column-end: 3;
+        transition: 1s;
+            }
+            
+.video-2:hover{
+    
+   transform: scale(1.1);
+     }
+            
+.video-3{
+    
+    padding-top: 125px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    transition: 1s;
+    }
+
+    .video-3:hover{
+    
+        transform: scale(1.1);
+          }
+.video-4{
+  
+    padding-top: 125px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    transition: 1s;
+}
+.video-4:hover{
+    
+    transform: scale(1.1);
+      }
+
+.video-5{
+  
+    padding-top: 150px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    transition: 1s;
+    
+}
+.video-5:hover{
+    
+    transform: scale(1.1);
+      }
+
+.video-6{
+ 
+    padding-top: 150px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    transition: 1s;
+}
+.video-6:hover{
+    
+    transform: scale(1.1);
+      }
+
+  /*Fin section*/
