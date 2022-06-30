@@ -84,23 +84,22 @@ h5{
     }
     
     .busqueda{
-
-    padding-right: 30px;
-    border-right: 0;
-    border-radius: 30px;
-    text-align: center;
+       
+        border:1px solid ;
+        border-radius: 30px;
+        text-align: center;
         width: 300px;
-    height: 76%;
+        height: 76%;
     }
 
     button{
-        
-        border-radius: 30px;
+        border:none;
+        background-color: rgb(0, 0, 0);
+      
     }
     .lupa{
-        width: 50px;
+        width: 40px;
         height: 31px;
-        border-radius: 30px;
         cursor: pointer;
     }
     
@@ -425,7 +424,7 @@ transition: 1s;
     .video-7:hover{
     
     transform: scale(1.1);
-
+    
           }
 
     .video-8{
@@ -441,7 +440,6 @@ transition: 1s;
   .video-8:hover{
     
     transform: scale(1.1);
-    
       }
 
   .video-9{
