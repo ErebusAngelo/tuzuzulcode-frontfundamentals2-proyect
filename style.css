@@ -2,7 +2,6 @@
 * {
     padding: 0;
     margin: 0;
-  
     box-sizing: border-box;
   }
 
@@ -11,7 +10,7 @@
   body {
     width: 100vw;
     height: 100vh;
-    
+    font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-areas:
     "header header  header  header  header   header"
@@ -23,11 +22,18 @@
      align-content: flex-start;
   }
 
+h4{
+    font-size: 17px;
+    
+}
+
+h5{
+    text-align: justify;
+    padding-left: 21%;
+    color: rgb(125, 125, 125);
+}
   
-  
-  
-  
-  /*Comienzo header*/
+   /*Comienzo header*/
   
   header{
     
@@ -42,6 +48,7 @@
     justify-content: space-between;
     opacity: 97%;
     }
+
      .Luna{
      
        width: 48px;
@@ -93,7 +100,6 @@
     }
     
     .opciones{
-        
         width: 160px;
         display: flex;
         gap: 25px;
@@ -103,6 +109,7 @@
     .btnopcion{
         width: 36px;
         height: 36px;
+
     }
     .btnopcion:hover{
         transform: scale(1.1);
@@ -113,7 +120,7 @@
     
     /*comienzo nav*/
     nav {
-        /* background-image: url(./fondosidebarynav/petalos.gif); */
+     
         position: fixed;
         top: 50px;
         width: 100%;
@@ -124,12 +131,13 @@
         opacity: 97%;
         display: flex;
         align-items: center;
-        justify-content:space-between;
-        gap:20px    
+        justify-content:flex-end;
+        gap:35px    
         }
 
     h2{
-        width: 140px;
+
+    width: 140px;
     background-color:rgb(241, 234, 234);
     border-radius: 20px;
     border:solid 1px rgb(176, 170, 170);
@@ -138,12 +146,14 @@
     transition: 1s;
  
     }
+
     h2:first-child{
         color: white;
         background-color: black;
      }
+
     h2:hover{
-        cursor: pointer;
+      cursor: pointer;
       background-color: rgb(154, 150, 150);;
     }
 /*Fin nav*/
@@ -159,7 +169,7 @@ aside{
     width: 340px;
     height:95%;
     background-color: white;
-    /* background-image: url(./fondosidebarynav/petalos.gif); */
+    
 }
 
 
@@ -176,15 +186,18 @@ aside{
     background-color: rgb(237, 230, 230);
     cursor: pointer;
 }
+
 .h3aside:first-child{
     color: black;
     background-color:  rgb(237, 230, 230);
 }
+
 .principal{
     
     height: 170px;  
     border-bottom: 1px solid rgb(201, 201, 201);
 }
+
 .iconoaside{
     width: 35px;
     height: 35px;
@@ -204,6 +217,7 @@ aside{
 }   
 
 .contenedor-2{
+
     padding-bottom: 20px;
     padding-left: 20px;
     display: flex;
@@ -212,6 +226,7 @@ aside{
     transition: 1s;
     
 }
+
 .contenedor-2:hover{
     background-color:rgb(237, 230, 230); 
     cursor: pointer;
@@ -228,7 +243,7 @@ aside{
     font-size: 20px;
     padding-left: 10px;
     padding-bottom: 20px;
- color:rgb(94, 90, 90)   
+    color:rgb(94, 90, 90)   
 }
 
 .Psus{
@@ -273,7 +288,6 @@ section{
    
     width: auto;
     height: 1980px;
- 
     background-color: rgb(246, 241, 241);
     padding: 10px;
     padding-left: 30px;
@@ -293,16 +307,7 @@ section{
         color: rgb(164, 158, 158);
     }
 
-    h4{
-        font-size: 17px;
-        
-    }
-    
-    h5{
-        text-align: justify;
-        padding-left: 21%;
-        color: rgb(125, 125, 125);
-    }
+  
     .contenedor{
         display: flex;
         gap: 30px;
@@ -328,6 +333,7 @@ grid-column-end: 2;
 transition: 1s;
 
     }
+    
 .video-1:hover{
     
     transform: scale(1.1);
